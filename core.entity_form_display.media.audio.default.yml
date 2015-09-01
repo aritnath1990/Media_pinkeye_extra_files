@@ -1,0 +1,33 @@
+langcode: und
+status: true
+dependencies:
+  config:
+    - field.field.media.audio.audio
+    - media_entity.bundle.audio
+  module:
+    - file
+id: media.audio.default
+targetEntityType: media
+bundle: audio
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  audio:
+    type: file_generic
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
+third_party_settings: {  }
